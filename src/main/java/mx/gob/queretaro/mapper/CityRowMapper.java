@@ -16,7 +16,7 @@ public class CityRowMapper implements RowMapper<CityBean> {
 
 		city.setCityId(rs.getLong("city_id"));
 		city.setCity(rs.getString("city"));
-		city.setCountry(new CountryBean(rs.getLong("city_id")));
+		city.setCountry(new CountryBean(rs.getLong("country_id")));
 		city.setLastUpdate(rs.getDate("last_update"));
 		city.setStatus(rs.getString("status"));
 
